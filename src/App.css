@@ -1,0 +1,79 @@
+/* Estilos generales - Tema Oscuro */
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Transiciones suaves */
+select {
+  transition: all 0.2s ease;
+}
+
+select:hover {
+  border-color: #60a5fa;
+}
+
+select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Estilos para la tabla de referencia */
+table {
+  border-collapse: collapse;
+}
+
+tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+tbody tr:hover {
+  background-color: #374151;
+}
+
+/* Mejoras de accesibilidad */
+select:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Estilos para opciones de select */
+option {
+  padding: 8px;
+  font-weight: 500;
+}
+
+/* Mejora visual para los bordes */
+.border {
+  border: 1px solid #4b5563;
+}
+
+/* Estilos para mejorar la legibilidad */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  select {
+    font-size: 14px;
+  }
+}
+
+/* Mejoras para impresión */
+@media print {
+  .shadow-lg, .shadow-md {
+    box-shadow: none;
+    border: 1px solid #4b5563;
+  }
+  
+  select {
+    border: 2px solid #000;
+  }
+}
