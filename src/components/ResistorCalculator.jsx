@@ -59,10 +59,6 @@ const ResistorCalculator = () => {
         value={currentValue}
         onChange={(e) => updateBand(bandName, e.target.value)}
         className="w-full p-2 bg-gray-800 border border-gray-500 rounded focus:border-blue-500 focus:outline-none text-white"
-        style={{
-          backgroundColor: COLORS[currentValue].color,
-          color: COLORS[currentValue].textColor
-        }}
       >
         {options.map((color) => {
           const data = COLORS[color];
